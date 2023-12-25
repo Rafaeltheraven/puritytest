@@ -2,7 +2,9 @@ const YES = "yes";
 const NO = "no";
 const regex = /http(s)?:\/\/.*\/test\/([0-9]+)/gm;
 
-document.onload = on_load
+document.addEventListener("DOMContentLoaded", function() {
+  on_load()
+});
 
 function on_load() {
     var {yes, no} = get_yes_no();
