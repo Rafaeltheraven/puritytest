@@ -8,11 +8,11 @@ function calc_score(n, total) {
 function get_yes_no() {
     var params = new URLSearchParams(queryString);
     var y = 0;
-    if params.has(YES) {
+    if (params.has(YES)) {
         y = params.get(YES);
     }
     var n = 0;
-    if params.has(NO) {
+    if (params.has(NO)) {
         n = params.get(NO);
     }
     return {
