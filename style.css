@@ -1,0 +1,399 @@
+BODY {
+    font-family: Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+A {
+    color: #ff0000;
+}
+
+A:active {
+    color: #770000;
+}
+
+A:visited {
+    color: #cc0000;
+}
+
+P, LI, DT, DD {
+    font-size: 80%;
+    text-align: justify;
+}
+
+HR {
+    border: 0;
+    border-top: 2px solid #ff0000;
+    height: 2px;
+}
+
+/*
+    A generic centering class, with fixes for tables and table headers
+*/
+
+.center {
+    text-align: center;
+}
+
+DIV.center DIV, DIV.center TABLE {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+DIV.center TABLE TH {
+    text-align: center;
+}
+
+/*
+    The page table lays out the main content.  Someday we'll kill the
+    table-based layout.
+    width: 760px;
+*/
+
+TABLE#main {
+    width: 970px;
+    clear: both;
+    border-collapse: collapse;
+}
+
+TABLE#main TD#content {
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    vertical-align: top;
+}
+
+TABLE#main TD#content LI {
+    margin-right: 2em;
+}
+
+TABLE#main TD#sidebar {
+    vertical-align: top;
+    background-color: #ffdddd;
+}
+
+TABLE#main TD#sidebar P {
+    margin: 0.75em;
+}
+
+TABLE#main TD#sidebar A {
+    font-weight: bold;
+}
+
+/*
+   The header at the top of the page.
+*/
+
+DIV#header {
+    width: 970px;
+}
+
+DIV#header H1 {
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 145%;
+    text-align: center;
+    padding: 0.25em;
+    margin: 0;
+}
+
+DIV#header DIV#subhead {
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.5em 1em 0.5em 1em;
+    font-size: 75%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+DIV#header A {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+DIV#header A.author {
+    text-decoration: underline;
+}
+
+/*
+    Various text styles.
+*/
+
+H1 {
+    font-size: 150%;
+}
+
+H2 {
+    font-size: 120%;
+    margin: 1em 0;
+}
+
+H3 {
+    font-size: 100%;
+    border-bottom: 1px solid #000000;
+    margin: 1.5em auto;
+}
+
+/*
+
+*/
+
+DIV#new-feature {
+    border: 2px solid #000000;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 80%;
+    width: 75%;
+}
+
+DIV#test-in-progress, DIV#test-500, DIV#test-200, DIV#test-1000, DIV#main-link {
+    margin-bottom: 1em;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+DIV#test-in-progress {
+    font-size: 80%;
+    border: 2px solid #ffff66;
+    background-color: #ffff66;
+    width: 75%;
+}
+
+DIV#test-in-progress A {
+    font-size: 125%;
+}
+
+DIV#test-500, DIV#main-link {
+    font-size: 80%;
+    background-color: #ffdddd;
+    margin: 1em 0;
+}
+
+SPAN.test-500 {
+    color: #ff0000;
+}
+
+DIV#test-500 A, DIV#main-link A {
+    font-size: 170%;
+}
+
+DIV#test-200 {
+    font-size: 75%;
+    background-color: #ddffdd;
+    width: 48.5%;
+    float: left;
+    margin: 0;
+    margin: 0 0 1em 0;
+}
+
+SPAN.test-200, DIV#test-200 A {
+    color: #008800;
+}
+
+DIV#test-1000 {
+    font-size: 75%;
+    background-color: #ddddff;
+    width: 48.5%;
+    float: right;
+    margin: 0 0 1em 0;
+}
+
+SPAN.test-1000, DIV#test-1000 A {
+    color: #000088;
+}
+
+/*
+    The table of scores.
+
+    Putting the table inside the DIV fixes a Moz formatting bug seen when
+    the table has a 5px border instead.
+*/
+
+DIV#scores {
+    padding: 0 5px 5px 5px;
+}
+
+DIV#scores TABLE {
+    width: 150px;
+    border-collapse: collapse;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 70%;
+}
+
+DIV#scores TABLE TABLE {
+    font-size: 100%;
+}
+
+DIV#scores TABLE TH {
+    padding: 5px;
+}
+
+DIV#scores TABLE TD {
+    padding: 5px;
+    vertical-align: top;
+}
+
+DIV#scores TABLE TD.odd {
+    background-color: #ffffff;
+}
+
+DIV#scores TABLE TD.anonymous {
+    color: #888888;
+}
+
+DIV#scores TABLE TD.number {
+    text-align: center;
+    font-weight: bold;
+}
+
+DIV#scores TABLE TD.score {
+    text-align: right;
+}
+
+/*
+    Stats tables.
+*/
+
+DIV.stats {
+    padding: 0 5px 5px 5px;
+}
+
+DIV.stats TABLE {
+    border-collapse: collapse;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 70%;
+}
+
+DIV.stats TABLE TH {
+    padding: 5px;
+}
+
+DIV.stats TABLE TD {
+    padding: 5px;
+    vertical-align: top;
+}
+
+DIV.stats TABLE TD.number {
+    text-align: center;
+    font-weight: bold;
+}
+
+DIV.stats TABLE TD.score {
+    text-align: right;
+}
+
+/*
+    Message board styles.
+*/
+
+DIV#form {
+    margin: 1em 5%;
+}
+
+DIV#form TABLE {
+    width: 100%;
+}
+
+DIV#form TABLE TD {
+    font-size: 80%;
+    vertical-align: top;
+    padding: 0.25em;
+}
+
+DIV#form TABLE TD.label {
+    text-align: right;
+}
+
+DIV#form P {
+    margin: 0.5em auto;
+}
+
+DIV#form TABLE TD.field, DIV#form TABLE TD.field INPUT, DIV#form TABLE TD.field TEXTAREA {
+    width: 95%;
+}
+
+DIV.message P.header {
+    text-align: left;
+    font-weight: bold;
+}
+
+DIV.message P.header SPAN.score {
+    color: #ff0000;
+}
+
+/*
+   Question lists
+*/
+
+TABLE#question-list {
+    border-collapse: collapse;
+    font-size: 80%;
+}
+
+TABLE#question-list TD {
+    padding: 0.5em;
+}
+
+TABLE#question-list TD.number {
+    font-size: 200%;
+    font-weight: bold;
+    text-align: right;
+    border-right: 2px solid #000000;
+}
+
+TABLE#question-list TD.question {
+    padding: 0.5em 1em;
+}
+
+TABLE#question-list INPUT {
+    margin-left: 3em;
+}
+
+/*
+    Various text styles
+*/
+
+SPAN.nobr {
+    white-space: nowrap;
+}
+
+DIV.instructions {
+    font-style: italic;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+DIV.footer P {
+    text-align: center;
+    font-size: 70%;
+    margin: 0.5em;
+}
+
+P.warning {
+    border: 1px dashed #ff0000;
+    color: #ff0000;
+    padding: 1em;
+}
+
+P#have-you-ever {
+    font-size: 90%;
+    font-weight: bold;    
+}
+
+P#current-score {
+    font-size: 90%;
+    font-weight: bold;
+    color: #ff0000;
+    text-align: center;
+}
+
+DIV#final-score {
+    font-weight: bold;
+    text-align: center;
+    color: #ff0000;
+    font-size: 750%;
+    margin: 0.1em 0;
+}
