@@ -1,5 +1,15 @@
 const YES = "yes";
 const NO = "no";
+const regex = /http(:?s)?:\/\/(.*)\/test\/([0-9]+)/gm;
+
+document.onload = on_load
+
+function on_load() {
+    var {yes, no} = get_yes_no();
+    var score = document.getElementById("current-score");
+    var total = window.location.href.matchAll(regex)[1];
+    score.innerText = `With ${yes + no} questions down, you're ${calc_score(no, total)}% pure`;
+}
 
 function calc_score(n, total) {
     return n / (total / 100)
