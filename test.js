@@ -16,7 +16,7 @@ function calc_score(n, total) {
 }
 
 function get_yes_no() {
-    var params = new URLSearchParams(queryString);
+    var params = new URLSearchParams(window.location.search);
     var y = 0;
     if (params.has(YES)) {
         y = params.get(YES);
