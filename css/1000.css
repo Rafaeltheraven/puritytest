@@ -1,0 +1,38 @@
+@import url("/css/style.css");
+
+HR {
+    border-top: 2px solid #000088;
+}
+
+TABLE#main TD#sidebar {
+    background-color: #ddddff;
+}
+
+TABLE#main TD#sidebar A {
+    color: #000088;
+}
+
+DIV#header H1 {
+    background-color: #000088;
+}
+
+P.warning {
+    border: 1px dashed #000088;
+    color: #000088;
+}
+
+P#current-score {
+    color: #000088;
+}
+
+DIV#final-score {
+    color: #000088;
+}
+
+DIV#main-link {
+    background-color: #ddddff;
+}
+
+DIV#main-link A {
+    color: #000088;
+}
