@@ -7,7 +7,7 @@ document.onload = on_load
 function on_load() {
     var {yes, no} = get_yes_no();
     var score = document.getElementById("current-score");
-    var total = Number(window.location.href.matchAll(regex).next()[2]);
+    var total = Number(window.location.href.matchAll(regex).next().value[2]);
     score.innerText = `With ${yes + no} questions down, you're ${calc_score(yes, total)}% pure`;
 }
 
