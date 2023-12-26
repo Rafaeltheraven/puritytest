@@ -9,12 +9,18 @@ document.addEventListener("DOMContentLoaded", function() {
 function on_load() {
     var {yes, no} = get_yes_no();
     var score = document.getElementById("current-score");
-    var total = Number(window.location.href.matchAll(regex).next().value[2]);
-    score.innerText = `With ${yes + no} questions down, you're ${calc_score(yes, total)}% pure`;
+    score.innerText = `With ${yes + no} questions down, you're ${calc_score_full()}% pure`;
 }
 
 function calc_score(y, total) {
     return (total - y) / (total / 100)
+}
+
+function calc_score_full() {
+    var {yes, no} = get_yes_no();
+    var score = document.getElementById("current-score");
+    var total = Number(window.location.href.matchAll(regex).next().value[2]);
+    return calc_score(yes, total);
 }
 
 function get_yes_no() {
